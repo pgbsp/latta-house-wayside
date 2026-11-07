@@ -1,0 +1,261 @@
+:root{
+
+    --park-blue:#1f5f74;
+    --panel-gray:#d7d5d3;
+    --quote-olive:#6a642f;
+    --text:#202020;
+
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+    background:#cfcfcf;
+    color:var(--text);
+
+    font-family:Georgia, serif;
+
+}
+
+.panel{
+
+    max-width:1400px;
+    margin:auto;
+    background:var(--panel-gray);
+
+}
+
+.title-section{
+
+    padding:55px 60px 30px 60px;
+
+}
+
+.title-section h1{
+
+    margin:0;
+
+    font-size:72px;
+    line-height:0.95;
+
+    font-weight:700;
+
+}
+
+.title-section h2{
+
+    margin-top:15px;
+
+    font-size:30px;
+
+    line-height:1.2;
+
+    font-style:italic;
+    font-weight:400;
+
+}
+
+.content-grid{
+
+    display:grid;
+
+    grid-template-columns:2.1fr 1fr;
+
+    gap:40px;
+
+    padding:0 60px;
+
+}
+
+.story{
+
+    font-size:23px;
+    line-height:1.6;
+
+}
+
+.story p{
+
+    margin-bottom:24px;
+
+}
+
+.sidebar{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.portrait-frame img{
+
+    width:100%;
+    display:block;
+
+    border:5px solid white;
+
+}
+
+.quote-box{
+
+    margin:20px 0 0;
+
+    padding:24px;
+
+    background:var(--quote-olive);
+
+    color:white;
+
+    font-style:italic;
+
+    font-size:26px;
+
+    line-height:1.4;
+
+}
+
+.caption{
+
+    margin-top:15px;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+}
+
+.illustration-panel{
+
+    position:relative;
+
+    margin-top:30px;
+
+}
+
+.illustration-panel img{
+
+    width:100%;
+    display:block;
+
+}
+
+.audio-button{
+
+    position:absolute;
+
+    right:30px;
+    bottom:30px;
+
+    border:none;
+
+    background:rgba(31,95,116,.95);
+
+    color:white;
+
+    padding:15px 20px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.audio-button:hover{
+
+    background:#184a5c;
+
+}
+
+.footer-bar{
+
+    background:var(--park-blue);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:24px 35px;
+
+}
+
+.footer-text{
+
+    width:78%;
+
+    font-size:22px;
+    line-height:1.4;
+
+}
+
+.footer-logo{
+
+    text-align:right;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    font-size:16px;
+
+}
+
+.hidden-text{
+
+    display:none;
+
+}
+
+@media(max-width:900px){
+
+    .title-section h1{
+
+        font-size:48px;
+
+    }
+
+    .title-section h2{
+
+        font-size:20px;
+
+    }
+
+    .content-grid{
+
+        grid-template-columns:1fr;
+
+        padding:0 25px;
+
+    }
+
+    .story{
+
+        font-size:18px;
+
+    }
+
+    .footer-bar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+    .footer-text{
+
+        width:100%;
+
+        font-size:18px;
+
+    }
+
+}
